@@ -1,21 +1,22 @@
-{ "name": "pimatic-plugin-template",
-  "description": "The plugin description",
-  "author": "Your Name <you@example.com> (http://your-website)",
-  "main": "my-plugin",
+{ "name": "pimatic-dlnacasts",
+  "description": "DLNA Control Point",
+  "author": "Christian Dietrich <stettberger@dokucode.de>",
+  "main": "dlnacasts",
   "files": [
-    "my-plugin.coffee",
+    "dlnacasts.coffee",
     "README.md",
-    "my-plugin-config-schema.coffee"
+    "dlnacasts-config-schema.coffee"
   ],
-  "version": "0.8.0",
-  "homepage": "http://your-plugin-website",
-  "private": true,
+  "version": "0.1.0",
+  "homepage": "http://github.com/stettberger/pimatic-dlnacasts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/pimatic/pimatic-plugin-template.git"
+    "url": "git://github.com/stettberger/pimatic-dlnacasts.git"
   },
-  "configSchema": "my-plugin-config-schema.coffee",
+  "configSchema": "dlnacasts-config-schema.coffee",
   "dependencies": {
+      "dlnacasts": ">=0.1.0",
+      "upnp-mediarenderer-client": "^1.2.2"
   },
   "peerDependencies": {
     "pimatic": "0.8.*"
